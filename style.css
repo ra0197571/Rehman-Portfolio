@@ -643,3 +643,6 @@ h1, h2, h3, h4 {
     transform: translateY(-3px); /* Thora sa upar uthay ga */
     box-shadow: 0 5px 15px rgba(211, 32, 126, 0.4);
 }
+.card .learn-more-btn {
+    margin-bottom: 10px !important; /* Buttons ke darmiyan gap ke liye */
+}
