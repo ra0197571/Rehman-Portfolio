@@ -646,3 +646,60 @@ h1, h2, h3, h4 {
 .card .learn-more-btn {
     margin-bottom: 10px !important; /* Buttons ke darmiyan gap ke liye */
 }
+/* ===== TARGETED MOBILE RESPONSIVENESS ===== */
+@media (max-width: 992px) {
+    /* 1. Navbar ko mobile par poora karo */
+    .navbar {
+        width: 100% !important;
+        left: 0 !important;
+        padding: 0 5% !important;
+        box-sizing: border-box;
+    }
+
+    /* 2. Hero Section ko stack karo taake picture upar niche ho jaye */
+    #hero {
+        flex-direction: column-reverse !important;
+        text-align: center !important;
+        padding-top: 120px !important;
+        padding-bottom: 50px !important;
+    }
+
+    /* 3. Profile picture ko center mein laao */
+    .profile-pic-container {
+        position: relative !important;
+        right: auto !important;
+        top: auto !important;
+        margin: 0 auto 30px !important;
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    /* 4. Expertise Cards ko aik line mein laao */
+    .expertise-cards {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
+    .card {
+        width: 100% !important;
+        max-width: 350px !important;
+    }
+
+    /* 5. Project Layouts ko stack karo */
+    .project-layout {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    .video-circle {
+        width: 250px !important;
+        height: 250px !important;
+        margin: 0 auto !important;
+    }
+
+    /* 6. Section ki padding kam karo mobile ke liye */
+    section {
+        padding: 60px 5% !important;
+    }
+}
