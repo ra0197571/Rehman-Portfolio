@@ -3,45 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI & Automation Tools - Rehman Ali</title>
-    <link rel="stylesheet" href="style.css"> <!-- Wahi purani CSS use hogi -->
+    <title>Solutions Catalog - Rehman Ali</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Specific Page Tweaks */
+        body {
+            padding: 80px 5% 50px; /* Top padding for fixed navbar if needed */
+        }
+        .catalog-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--main-purple);
+            text-decoration: none;
+            font-weight: 700;
+            font-family: 'Rajdhani';
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+        .back-btn:hover {
+            transform: translateX(-5px);
+            color: white;
+        }
+        .expertise-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #ffffff !important;
+            padding: 40px 30px !important;
+            height: auto !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .card i {
+            font-size: 2.5rem;
+            color: var(--main-purple);
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            color: #1a1a3a;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .card p {
+            color: #444 !important;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            margin-top: auto;
+        }
+        /* Mobile Specific */
+        @media (max-width: 768px) {
+            body { padding: 40px 5%; }
+            .catalog-header h1 { font-size: 2rem; }
+            .expertise-cards { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
-<body style="background-image: var(--bg-gradient); color: white; padding: 50px 10%;">
+<body>
 
-    <a href="index.html" style="color: #d3207e; text-decoration: none; font-weight: bold;"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
 
-    <h1 style="text-align: center; margin-top: 30px; color: #d3207e;">MY AUTOMATION TOOLS</h1>
-    <p style="text-align: center; margin-bottom: 50px;">Select a tool to view its details and source code.</p>
+    <div class="catalog-header">
+        <h1>AI & AUTOMATION SOLUTIONS</h1>
+        <p>Production-ready tools designed to automate business growth and intelligence.</p>
+    </div>
 
-    <div class="expertise-cards" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+    <div class="expertise-cards">
         
         <!-- Tool 1: AI Outreach Engine -->
-        <div class="card" style="width: 350px; background: #fff; padding: 30px; border-radius: 10px;">
-            <i class="fas fa-paper-plane" style="font-size: 2rem; color: #d3207e;"></i>
-            <h3>AI Outreach Engine</h3>
-            <p style="color: #222;">Scrapes leads and uses Llama 3 AI to generate personalized pitches.</p>
-            <a href="https://docs.google.com/spreadsheets/d/1J5wem_tivZ3ZVYvIFA1MfEDgJTjDb3JolQKDva0g6Q0/edit?usp=sharing" target="_blank" class="learn-more-btn pink" style="margin-top:10px;">VIEW LIVE DASHBOARD</a>
-            <a href="https://github.com/ra0197571/AI-Lead-Gen-Outreach" target="_blank" class="learn-more-btn">View Code on GitHub</a>
+        <div class="card" data-aos="fade-up">
+            <i class="fas fa-paper-plane"></i>
+            <h3>AI OUTREACH ENGINE</h3>
+            <p>Automated B2B lead generation system that writes personalized sales pitches using Llama 3 AI.</p>
+            <div class="btn-group">
+                <a href="https://docs.google.com/spreadsheets/d/1J5wem_tivZ3ZVYvIFA1MfEDgJTjDb3JolQKDva0g6Q0/edit?usp=sharing" target="_blank" class="learn-more-btn pink">Live Dashboard</a>
+                <a href="https://github.com/ra0197571/AI-Lead-Gen-Outreach" target="_blank" class="learn-more-btn">Source Code</a>
+            </div>
         </div>
 
-        <!-- Tool 2: DexScreener Scraper -->
-        <div class="card" style="width: 350px; background: #fff; padding: 30px; border-radius: 10px;">
-            <i class="fas fa-chart-line" style="font-size: 2rem; color: #d3207e;"></i>
-            <h3>DexScreener Bot</h3>
-            <p style="color: #222;">Real-time crypto data scraper with automated CSV reporting.</p>
-            <a href="#" class="learn-more-btn">View Code on GitHub</a> <!-- Iska repo link baad mein dalo -->
+        <!-- Tool 2: AI Competitor Spy (The New Boss Tool) -->
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-user-secret"></i>
+            <h3>AI COMPETITOR SPY</h3>
+            <p>Autonomous agent that monitors competitor sites 24/7 and generates strategic AI intelligence reports.</p>
+            <div class="btn-group">
+                <a href="https://github.com/ra0197571/AI-Competitor-Spy" target="_blank" class="learn-more-btn">View Intelligence Code</a>
+            </div>
         </div>
 
-        <!-- Tool 3: Google Sheets Automator -->
-        <div class="card" style="width: 350px; background: #fff; padding: 30px; border-radius: 10px;">
-            <i class="fab fa-google" style="font-size: 2rem; color: #d3207e;"></i>
-            <h3>One-Click Emailer</h3>
-            <p style="color: #222;">Google Apps Script tool to send thousands of emails from Sheets.</p>
-            <a href="#" class="learn-more-btn">Coming Soon</a>
+        <!-- Tool 3: One-Click Emailer -->
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fab fa-google"></i>
+            <h3>WORKFLOW AUTOMATOR</h3>
+            <p>Google Apps Script solution to connect Sheets and Gmail for mass personalized outreach with one click.</p>
+            <div class="btn-group">
+                <a href="#" class="learn-more-btn">Demo Coming Soon</a>
+            </div>
         </div>
 
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
 
 </body>
 </html>
